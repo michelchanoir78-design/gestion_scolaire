@@ -2,46 +2,40 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription</title>
-
-    <link rel="stylesheet" href="css/register.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inscription</title>
+<link rel="stylesheet" href="login.css">
 </head>
 
 <body>
 
-    <div class="register-box">
+<div class="login-box">
 
-        <h2>Créer un compte</h2>
+    <h2>Inscription</h2>
 
-        <input type="text" id="nom" placeholder="Nom complet">
+    <input type="text" id="nom" placeholder="Nom">
 
-        <input type="email" id="email" placeholder="Email">
+    <input type="email" id="email" placeholder="Email">
 
-        <input type="password" id="password" placeholder="Mot de passe">
+    <input type="password" id="password" placeholder="Mot de passe">
 
-        <select id="role">
-            <option value="etudiant">Étudiant</option>
-            <option value="enseignant">Enseignant</option>
-            <option value="inspecteur">Inspecteur</option>
-            <option value="prefet">Préfet</option>
-        </select>
+    <!-- Choix du rôle -->
+    <select id="role">
+        <option value="eleve">Élève</option>
+        <option value="enseignant">Enseignant</option>
+        <option value="prefet">Préfet</option>
+        <option value="proviseur">Proviseur</option>
+        <option value="expert">Expert</option>
+    </select>
 
-        <button onclick="register()">
-            S'inscrire
-        </button>
+    <button onclick="register()">
+        S'inscrire
+    </button>
 
-        <p id="message"></p>
+</div>
 
-        <a href="login.html">
-            Déjà un compte ? Se connecter
-        </a>
-
-    </div>
-
-    <script src="js/register.js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>

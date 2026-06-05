@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Espace Préfet</title>
+
+<link rel="stylesheet" href="prefet.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="profile">
+        <img src="images/prefet.jpg">
+        <h2 id="prefetName"></h2>
+        <p>Préfet</p>
+    </div>
+
+    <div class="menu">
+        <a href="#">🏠 Accueil</a>
+        <a href="#">📋 Discipline</a>
+        <a href="#">📢 Annonces</a>
+    </div>
+
+    <button class="logout" onclick="logout()">Déconnexion</button>
+
+</div>
+
+<div class="main">
+    <h1>Bienvenue Préfet 👮</h1>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+const user = JSON.parse(localStorage.getItem("user"));
+
+if (!user || user.role !== "prefet") {
+    window.location.href = "login.html";
+}
+
+document.getElementById("prefetName").innerText =
+    user.nom || user.email;
+</script>
+
+</body>
+</html>

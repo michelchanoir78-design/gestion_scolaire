@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Espace Enseignant</title>
+
+<link rel="stylesheet" href="teacher.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="profile">
+        <img src="images/teacher.jpg">
+        <h2 id="teacherName"></h2>
+        <p>Enseignant</p>
+    </div>
+
+    <div class="menu">
+        <a href="#">🏠 Accueil</a>
+        <a href="#">📚 Cours</a>
+        <a href="#">📝 Notes</a>
+        <a href="#">📢 Annonces</a>
+    </div>
+
+    <button class="logout" onclick="logout()">Déconnexion</button>
+
+</div>
+
+<div class="main">
+    <h1>Bienvenue Enseignant 👨‍🏫</h1>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+const user = JSON.parse(localStorage.getItem("user"));
+
+if (!user || user.role !== "enseignant") {
+    window.location.href = "login.html";
+}
+
+document.getElementById("teacherName").innerText =
+    user.nom || user.email;
+</script>
+
+</body>
+</html>
