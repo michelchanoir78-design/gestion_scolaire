@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#eef2ff;
+    padding:30px;
+}
+
+h1{
+    color:#1e293b;
+    margin-bottom:20px;
+}
+
+ul{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    margin-top:20px;
+    list-style:none;
+}
+
+ul li{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 20px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}

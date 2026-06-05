@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+}
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 50px;
+
+    background:#0f172a;
+
+    color:white;
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:20px;
+}
+
+.hero{
+
+    height:90vh;
+
+    background:url("../images/school.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.overlay{
+
+    text-align:center;
+
+    background:rgba(0,0,0,0.5);
+
+    color:white;
+
+    padding:40px;
+
+    border-radius:15px;
+}
+
+.overlay h1{
+
+    font-size:45px;
+
+    margin-bottom:20px;
+}
+
+.overlay p{
+
+    margin-bottom:30px;
+
+    font-size:20px;
+}
+
+.buttons button{
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    margin:10px;
+
+    font-size:16px;
+}
+
+.login-btn{
+
+    background:#2563eb;
+
+    color:white;
+}
+
+.register-btn{
+
+    background:#16a34a;
+
+    color:white;
+}
