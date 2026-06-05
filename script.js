@@ -1,7 +1,5 @@
 
-// ==========================
-// 📌 REGISTER (inscription)
-// ==========================
+
 function register() {
     const nom = document.getElementById("nom").value;
     const email = document.getElementById("email").value;
@@ -39,9 +37,7 @@ function register() {
 }
 
 
-// ==========================
-// 📌 LOGIN
-// ==========================
+
 function login() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
@@ -63,9 +59,7 @@ function login() {
 }
 
 
-// ==========================
-// 📌 REDIRECTION PAR RÔLE
-// ==========================
+
 function redirectByRole(role) {
     if (role === "eleve") {
         window.location.href = "eleve.html";
@@ -88,9 +82,7 @@ function redirectByRole(role) {
 }
 
 
-// ==========================
-// 📌 PROTECTION DES PAGES
-// ==========================
+
 function checkAuth(expectedRole) {
     const user = JSON.parse(localStorage.getItem("user"));
 
@@ -108,9 +100,7 @@ function checkAuth(expectedRole) {
 }
 
 
-// ==========================
-// 📌 LOGOUT
-// ==========================
+
 function logout() {
     localStorage.removeItem("user");
     window.location.href = "login.html";
@@ -121,7 +111,7 @@ function logout() {
 // 📌 REDIRECTION SIMPLE
 // ==========================
 function goLogin() {
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
 
 function goRegister() {
