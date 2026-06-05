@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Proviseur Dashboard</title>
+
+<link rel="stylesheet" href="css\proviseur.css">
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+    <div class="profile">
+
+        <img src="images/proviseur.jpg">
+
+        <h2 id="proviseurName"></h2>
+
+        <p>Proviseur Général</p>
+
+    </div>
+
+    <div class="menu">
+
+        <a href="#">🏠 Dashboard</a>
+
+        <a href="#">👨‍🎓 Étudiants</a>
+
+        <a href="#">👨‍🏫 Enseignants</a>
+
+        <a href="#">👮 Inspecteurs</a>
+
+        <a href="#">👨‍💼 Préfets</a>
+
+        <a href="#">📚 Cours</a>
+
+        <a href="#">💰 Paiements</a>
+
+        <a href="#">📊 Statistiques</a>
+
+        <a href="#">📢 Annonces</a>
+
+        <a href="#">⚙ Paramètres</a>
+
+        <a href="#">🔐 Sécurité</a>
+
+    </div>
+
+    <button class="logout"
+    onclick="logout()">
+
+        Déconnexion
+
+    </button>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="main">
+
+    <!-- TOP -->
+
+    <div class="top">
+
+        <h1>
+            Bienvenue Proviseur 🏫
+        </h1>
+
+        <p>
+            Gestion générale du système scolaire
+        </p>
+
+    </div>
+
+    <!-- CARDS -->
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>👨‍🎓 Étudiants</h3>
+
+            <p>350 étudiants</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>👨‍🏫 Enseignants</h3>
+
+            <p>25 enseignants</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>📚 Cours</h3>
+
+            <p>40 cours actifs</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>💰 Paiements</h3>
+
+            <p>78% paiements validés</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>📢 Annonces</h3>
+
+            <p>12 annonces publiées</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>📊 Activité</h3>
+
+            <p>Système actif ✔</p>
+
+        </div>
+
+    </div>
+
+    <!-- ANNONCES -->
+
+    <div class="annonce-box">
+
+        <h2>
+            📢 Nouvelle annonce
+        </h2>
+
+        <textarea
+        id="annonce"
+        placeholder="Écrire une annonce..."
+        ></textarea>
+
+        <button onclick="publierAnnonce()">
+
+            Publier annonce
+
+        </button>
+
+    </div>
+
+    <!-- SYSTEM -->
+
+    <div class="system-box">
+
+        <h2>
+            ⚙ Gestion du système
+        </h2>
+
+        <button onclick="manageUsers()">
+
+            Gérer utilisateurs
+
+        </button>
+
+        <button onclick="showStats()">
+
+            Voir statistiques
+
+        </button>
+
+        <button onclick="security()">
+
+            Sécurité système
+
+        </button>
+
+    </div>
+
+    <!-- COMMUNICATION -->
+
+    <div class="message-box">
+
+        <h2>
+            📧 Communication
+        </h2>
+
+        <a
+        href="https://mail.google.com/mail/?view=cm&fs=1"
+        target="_blank"
+        >
+
+            <button>
+                Ouvrir Gmail
+            </button>
+
+        </a>
+
+    </div>
+
+</div>
+
+<script src="js/proviseur.js"></script>
+
+</body>
+</html>

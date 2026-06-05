@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Espace Inspecteur</title>
+<link rel="stylesheet" href="css/inspector.css">
+</head>
+
+<body>
+
+<h1 id="inspecteurName"></h1>
+
+<h2>Dashboard Inspecteur</h2>
+
+<ul>
+
+<li>📊 Statistiques</li>
+
+<li>👨‍🏫 Contrôle enseignants</li>
+
+<li>📢 Rapports</li>
+
+</ul>
+
+<button onclick="logout()">
+Déconnexion
+</button>
+
+<script>
+
+const user =
+JSON.parse(localStorage.getItem("user"));
+
+if(!user || user.role !== "inspecteur"){
+
+    window.location.href = "login.html";
+}
+
+document.getElementById("inspecteurName")
+.innerText =
+"Bienvenue " + user.nom;
+
+function logout(){
+
+    localStorage.removeItem("user");
+
+    window.location.href = "login.html";
+}
+
+</script>
+<script src="js/inspector.js"></script>
+
+</body>
+</html>
